@@ -1,4 +1,4 @@
-CXXFLAGS = -O2 -g0 -DREQUIRE_HEIGHT=640000 -DREQUIRE_PROTOCOL=70922 -DSEEDER_VERSION=\"3.0.0\"
+CXXFLAGS = -O2 -g0 -Wno-misleading-indentation -DREQUIRE_PROTOCOL=70922 -DSEEDER_VERSION=\"3.0.0\" -DREQUIRE_HEIGHT=640000
 LDFLAGS = $(CXXFLAGS)
 
 dnsseed: dns.o bitcoin.o netbase.o protocol.o db.o main.o util.o
