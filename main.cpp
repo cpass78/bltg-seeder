@@ -253,7 +253,7 @@ public:
     dns_opt.host = opts->host;
     dns_opt.ns = opts->ns;
     dns_opt.mbox = opts->mbox;
-    dns_opt.datattl = 3600;
+    dns_opt.datattl = 60;
     dns_opt.nsttl = 40000;
     dns_opt.cb = GetIPList;
     dns_opt.port = opts->nPort;
@@ -408,7 +408,7 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"45.77.229.172", "45.32.94.32", "207.180.252.89", ""}; //seed1-2, explorer
+static const string mainnet_seeds[] = {"seed1.block-logic.com", ""};
 static const string testnet_seeds[] = {""};
 static const string *seeds = mainnet_seeds;
 
